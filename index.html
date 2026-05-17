@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Консалт Экономикс — бухгалтерия и финдиректор в Уфе</title>
+    <meta name="description" content="Бухгалтерский аутсорсинг в Уфе. Главбух + финдиректор (экс-ФНС, банки). Переход на НДС, кредиты, сопровождение в ФНС. Офлайн-офис.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #fff; color: #1a1e24; line-height: 1.4; scroll-behavior: smooth; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+        .btn-primary { display: inline-block; background: #e76f1f; color: white; font-weight: 700; padding: 14px 28px; border-radius: 40px; text-decoration: none; transition: 0.2s; border: none; cursor: pointer; }
+        .btn-primary:hover { background: #c85a0e; transform: translateY(-2px); }
+        .btn-secondary { display: inline-block; background: transparent; color: #1a1e24; font-weight: 600; padding: 14px 28px; border-radius: 40px; text-decoration: none; border: 1px solid #d4d8dd; }
+        .btn-secondary:hover { border-color: #e76f1f; color: #e76f1f; }
+        .section { padding: 70px 0; border-bottom: 1px solid #f0f2f5; }
+        .section-title { font-size: 2.1rem; font-weight: 800; margin-bottom: 48px; text-align: center; }
+        .grid-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 32px; }
+        .card { background: #fff; border-radius: 28px; padding: 28px; box-shadow: 0 12px 30px rgba(0,0,0,0.03); border: 1px solid #eff2f6; }
+        .pain-icon { font-size: 2.2rem; margin-bottom: 16px; display: block; }
+        .hero { padding: 60px 0 40px; background: #fefcf9; }
+        .hero-grid { display: flex; gap: 48px; align-items: center; flex-wrap: wrap; }
+        .hero-content { flex: 1.2; }
+        .hero-image { flex: 0.9; background: #f3f1ed; border-radius: 32px; padding: 16px; text-align: center; color: #5f6b7a; }
+        .hero-badge { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: #e76f1f; font-weight: 700; margin-bottom: 16px; }
+        h1 { font-size: 3.2rem; font-weight: 800; line-height: 1.2; margin-bottom: 20px; }
+        .hero-sub { font-size: 1.2rem; color: #3b434e; margin-bottom: 32px; }
+        .hero-buttons { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
+        .floating-buttons { position: fixed; bottom: 24px; right: 24px; display: flex; flex-direction: column; gap: 12px; z-index: 1000; }
+        .float-wa, .float-call { width: 54px; height: 54px; border-radius: 60px; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 16px rgba(0,0,0,0.12); text-decoration: none; font-size: 1.6rem; }
+        .float-wa { background: #25D366; color: white; }
+        .float-call { background: #1e2a3e; color: white; }
+        .faq-item { border-bottom: 1px solid #eef2f6; padding: 18px 0; }
+        .faq-question { font-weight: 700; font-size: 1.1rem; cursor: pointer; display: flex; justify-content: space-between; }
+        .faq-answer { display: none; padding-top: 12px; color: #3f4a5b; }
+        .faq-item.open .faq-answer { display: block; }
+        .office-block { background: #f9fafc; border-radius: 32px; padding: 28px; display: flex; flex-wrap: wrap; gap: 32px; align-items: center; }
+        .office-text { flex: 1; }
+        .office-map { flex: 1; background: #d9dce3; border-radius: 24px; min-height: 200px; display: flex; align-items: center; justify-content: center; color: #4c5a6e; }
+        @media (max-width:800px) { .grid-3 { grid-template-columns: 1fr; } h1 { font-size: 2.3rem; } .hero-grid { flex-direction: column; } .section-title { font-size: 1.8rem; } }
+        footer { background: #13181f; color: #b0bbc9; padding: 48px 0 32px; }
+        .footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 32px; }
+        .legal-checkboxes { margin-top: 24px; text-align: left; font-size: 0.85rem; }
+        .legal-checkboxes label { display: block; margin: 8px 0; }
+        .legal-checkboxes input { margin-right: 10px; }
+    </style>
+</head>
+<body>
+
+<body>
+
+<!-- ШАПКА С БУРГЕР-МЕНЮ -->
+<header style="background: white; border-bottom: 1px solid #eef2f6; position: sticky; top: 0; z-index: 1000;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; padding: 16px 24px;">
+        <div style="font-weight: 800; font-size: 1.4rem; color: #1a1e24;">
+            Консалт<span style="color: #e76f1f;">Экономикс</span>
+        </div>
+        
+        <!-- Бургер-иконка (видна только на телефоне) -->
+        <div class="burger" style="cursor: pointer; display: none; flex-direction: column; gap: 5px;">
+            <span style="width: 25px; height: 3px; background: #1a1e24; border-radius: 3px;"></span>
+            <span style="width: 25px; height: 3px; background: #1a1e24; border-radius: 3px;"></span>
+            <span style="width: 25px; height: 3px; background: #1a1e24; border-radius: 3px;"></span>
+        </div>
+        
+        <!-- Меню (на телефоне скрыто, показывается при клике) -->
+        <nav class="nav-menu" style="display: flex; gap: 28px; align-items: center; flex-wrap: wrap;">
+            <a href="#" style="text-decoration: none; color: #1a1e24; font-weight: 500;">О нас</a>
+            <a href="#" style="text-decoration: none; color: #1a1e24; font-weight: 500;">Услуги</a>
+            <a href="#" style="text-decoration: none; color: #1a1e24; font-weight: 500;">Кейсы</a>
+            <a href="#" style="text-decoration: none; color: #1a1e24; font-weight: 500;">Контакты</a>
+            <a href="tel:+79177907206" style="background: #e76f1f; color: white; padding: 8px 20px; border-radius: 40px; text-decoration: none; font-weight: 600;">+7 917 790 72 06</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Стили и скрипт для бургер-меню (добавить в конец файла, перед </body>) -->
+<style>
+    @media (max-width: 768px) {
+        .burger {
+            display: flex !important;
+        }
+        .nav-menu {
+            position: fixed;
+            top: 70px;
+            left: -100%;
+            width: 80%;
+            height: 100vh;
+            background: white;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 40px 30px;
+            gap: 25px;
+            transition: 0.3s;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+            z-index: 999;
+        }
+        .nav-menu.active {
+            left: 0;
+        }
+        .nav-menu a {
+            font-size: 1.2rem;
+        }
+    }
+</style>
+
+<script>
+    // Скрипт для открытия/закрытия бургер-меню
+    document.addEventListener('DOMContentLoaded', function() {
+        const burger = document.querySelector('.burger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        if (burger && navMenu) {
+            burger.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+            
+            // Закрываем меню при клике на ссылку
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                });
+            });
+        }
+    });
+</script>
+
+<div class="floating-buttons">
+    <a href="https://wa.me/79177907206" class="float-wa" target="_blank">📱</a>
+    <a href="tel:+79177907206" class="float-call">📞</a>
+</div>
+
+<div class="floating-buttons">
+    <a href="https://wa.me/79177907206" class="float-wa" target="_blank">📱</a>
+    <a href="tel:+79177907206" class="float-call">📞</a>
+</div>
+
+<section class="hero">
+    <div class="container hero-grid">
+        <div class="hero-content">
+            <div class="hero-badge">⚡ Уфа • Башкортостан • офлайн-офис</div>
+            <h1>Главбух <span style="color:#e76f1f;">+ финдиректор</span><br>(экс-ФНС). В одном месте.</h1>
+            <p class="hero-sub">Бухгалтерия, налоги, кредиты и проверки. Обратная связь <strong>сегодня до 18:00</strong>.</p>
+            <div class="hero-buttons">
+                <a href="#form-block" class="btn-primary">Бесплатная диагностика за 1 час</a>
+                <a href="#" id="openChecklist" class="btn-secondary">📥 Скачать чек-лист</a>
+            </div>
+        </div>
+        <div class="hero-image">
+    <img src="worker.jpg" alt="Рабочий процесс" style="width:100%; border-radius:24px; margin-bottom:16px;">
+    <img src="office.jpg" alt="Офис" style="width:100%; border-radius:24px;">
+    <p style="font-size:12px; color:#888; margin-top:12px;">Фото: рабочий процесс и офис</p>
+</div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">😰 Кому мы нужны?</h2>
+        <div class="grid-3">
+            <div class="card"><span class="pain-icon">📈😨</span><h3>Выходите на НДС</h3><p>Без кассовых разрывов и ошибок.</p></div>
+            <div class="card"><span class="pain-icon">🌍⚠️</span><h3>Нерезиденты в штате</h3><p>Валютный контроль, отчётность — под ключ.</p></div>
+            <div class="card"><span class="pain-icon">🔍⚖️</span><h3>Риск проверки ФНС</h3><p>Подготовим и сопроводим на комиссии.</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background: #fff5f0;">
+    <div class="container">
+        <h2 class="section-title" style="color: #c2410c;">❌ Кому мы НЕ подходим</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap: 20px;">
+            <div style="background: white; border-radius: 20px; padding: 24px; border: 1px solid #ffddd6;">
+                <div style="font-size: 2rem;">💰</div>
+                <strong>Кто ищет «чёрную оптимизацию»</strong>
+                <p style="margin-top: 8px;">Мы работаем только законными методами. Серых схем не предлагаем.</p>
+            </div>
+            <div style="background: white; border-radius: 20px; padding: 24px; border: 1px solid #ffddd6;">
+                <div style="font-size: 2rem;">📉</div>
+                <strong>Кто готов платить копейки</strong>
+                <p style="margin-top: 8px;">Качественная бухгалтерия и финдиректор стоят денег. Дешево — только риск.</p>
+            </div>
+            <div style="background: white; border-radius: 20px; padding: 24px; border: 1px solid #ffddd6;">
+                <div style="font-size: 2rem;">📞</div>
+                <strong>Кто хочет «ответим завтра»</strong>
+                <p style="margin-top: 8px;">Мы на связи в рабочие часы. Если нужен бухгалтер раз в месяц — не к нам.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background:#fefaf5;">
+    <div class="container">
+        <h2 class="section-title">Почему мы?</h2>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:28px;">
+            <div class="card"><strong>🔹 2 профиля в 1 месте</strong><br>Главбух + финдиректор (экс-ФНС).</div>
+            <div class="card"><strong>📍 Офлайн в Уфе</strong><br>Луганская,6. Приходите с документами.</div>
+            <div class="card"><strong>🧠 Работаем со страхами</strong><br>Переход на НДС, проверки — без паники.</div>
+            <div class="card"><strong>🏢 Сами владели бизнесом</strong><br>Туризм, аутсорсинг, вентиляция.</div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Кейсы</h2>
+        <div class="grid-3">
+            <div class="card">🎯 <strong>Строительная компания</strong><br>➖ отказ в кредите<br>➕ одобрили 8 млн ₽</div>
+            <div class="card">📦 <strong>Опт с нерезидентами</strong><br>➖ штраф валютного контроля<br>➕ штраф отменили</div>
+            <div class="card">🏭 <strong>Производство, переход на НДС</strong><br>➖ страх кассовых разрывов<br>➕ перешли без потерь</div>
+        </div>
+    </div>
+</section>
+
+<section id="form-block" class="section" style="background:#eef2f8;">
+    <div class="container" style="max-width:700px;">
+        <h2 class="section-title">🎯 Бесплатная диагностика за 1 час</h2>
+        <p>Оставьте контакты — мы подберём время для консультации в Уфе.</p>
+        
+        <!-- ЮРИДИЧЕСКИ ПРАВИЛЬНЫЕ ГАЛОЧКИ (по требованиям РКН) -->
+        <div class="legal-checkboxes" id="legalCheckboxes">
+            <label>
+                <input type="checkbox" id="policyCheck" required> 
+                Я ознакомлен и согласен с 
+                <a href="policy.html" target="_blank">Политикой обработки персональных данных</a>
+            </label>
+            <label>
+                <input type="checkbox" id="consentCheck" required> 
+                Я даю 
+                <a href="consent.html" target="_blank">Согласие на обработку персональных данных</a>
+            </label>
+            <label>
+                <input type="checkbox" id="cookieCheck" required> 
+                Я согласен на использование файлов cookie и Яндекс.Метрики
+            </label>
+        </div>
+        <p style="font-size:12px; margin-top:10px;" id="checkboxError" style="color:red;"></p>
+
+        <!-- ВАША ЯНДЕКС ФОРМА -->
+        <script src="https://forms.yandex.ru/_static/embed.js"></script>
+        <iframe src="https://forms.yandex.ru/u/6a099e55f47e736e4e2588e7?iframe=1" frameborder="0" name="ya-form-6a099e55f47e736e4e2588e7" width="100%" height="500"></iframe>
+        
+        <p style="font-size: 12px; margin-top: 20px;">Нажимая кнопку «Отправить» в форме, вы подтверждаете согласие с условиями выше.</p>
+	<div style="height: 20px;"></div>
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-inner">
+        <div>© Консалт Экономикс, Уфа</div>
+        <div><a href="policy.html" style="color:#e76f1f;">Политика конфиденциальности</a></div>
+        <div>📞 +7 917 790 72 06<br>✉️ dinara@conseco.ru</div>
+    </div>
+</footer>
+
+<script>
+    // Блокировка отправки формы, если галочки не проставлены (Яндекс Форма перехватывает сама отправку, но мы подстрахуемся)
+    // Увы, заблокировать iframe извне сложно. Добавим предупреждение при клике на поле формы (первый клик)
+    let warned = false;
+    function checkChecklists() {
+        const policy = document.getElementById('policyCheck').checked;
+        const consent = document.getElementById('consentCheck').checked;
+        const cookie = document.getElementById('cookieCheck').checked;
+        if (!policy || !consent || !cookie) {
+            if (!warned) {
+                alert('Пожалуйста, поставьте все галочки согласия перед отправкой заявки. Это требование закона.');
+                warned = true;
+            }
+            return false;
+        }
+        return true;
+    }
+    // Добавляем слушатель на весь документ — если клик по iframe, проверяем
+    document.querySelector('iframe').addEventListener('click', function() {
+        checkChecklists();
+    });
+    // Также при загрузке страницы покажем мягкое напоминание
+    window.onload = function() {
+        setTimeout(() => {
+            console.log('Галочки обязательны');
+        }, 500);
+    }
+</script>
+
+<!-- МОДАЛКА ДЛЯ ЧЕК-ЛИСТА -->
+<div id="checklistModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 2000; justify-content: center; align-items: center;">
+    <div style="background: white; max-width: 400px; margin: 20px; padding: 32px; border-radius: 32px;">
+        <h3 style="margin-bottom: 16px;">📥 Скачать чек-лист</h3>
+        <p>«10 признаков, что ФНС вас уже заметила»</p>
+        <form id="checklistForm">
+            <input type="text" id="checklistName" placeholder="Ваше имя" required style="width: 100%; padding: 12px; margin: 12px 0; border: 1px solid #ccc; border-radius: 40px;">
+            <input type="tel" id="checklistPhone" placeholder="Телефон" required style="width: 100%; padding: 12px; margin: 12px 0; border: 1px solid #ccc; border-radius: 40px;">
+            <button type="submit" style="background: #e76f1f; color: white; width: 100%; padding: 12px; border: none; border-radius: 40px; cursor: pointer;">Скачать чек-лист</button>
+        </form>
+        <button onclick="closeModal()" style="margin-top: 16px; background: none; border: none; cursor: pointer;">✖ Закрыть</button>
+    </div>
+</div>
+
+<script>
+    const modal = document.getElementById('checklistModal');
+    function openModal() { modal.style.display = 'flex'; }
+    function closeModal() { modal.style.display = 'none'; }
+    
+    document.getElementById('openChecklist')?.addEventListener('click', function(e) {
+        e.preventDefault();
+        openModal();
+    });
+    
+    document.getElementById('checklistForm')?.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = document.getElementById('checklistName').value;
+        const phone = document.getElementById('checklistPhone').value;
+        if (name && phone) {
+            alert('Спасибо! Сейчас начнётся скачивание.');
+            window.location.href = 'checklist.pdf';
+            closeModal();
+        } else {
+            alert('Пожалуйста, заполните имя и телефон');
+        }
+    });
+</script>
+
+</body>
+</html>
