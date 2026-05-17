@@ -212,33 +212,21 @@
     </div>
 </section>
 
-<section id="form-block" class="section" style="background:#eef2f8;">
+<section id="form-block" class="section" style="background:#eef2f8; padding-top: 40px; padding-bottom: 40px;">
     <div class="container" style="max-width:700px;">
-        <h2 class="section-title">🎯 Бесплатная диагностика за 1 час</h2>
-        <p>Оставьте контакты — мы подберём время для консультации в Уфе.</p>
+        <h2 class="section-title" style="margin-bottom: 16px;">🎯 Бесплатная диагностика за 1 час</h2>
+        <p style="text-align: center; margin-bottom: 24px;">Оставьте контакты — мы подберём время для консультации в Уфе.</p>
         
-        <!-- ЮРИДИЧЕСКИ ПРАВИЛЬНЫЕ ГАЛОЧКИ (по требованиям РКН) -->
-        <div class="legal-checkboxes" id="legalCheckboxes">
-            <label>
-                <input type="checkbox" id="policyCheck" required> 
-                Я ознакомлен и согласен с 
-                <a href="policy.html" target="_blank">Политикой обработки персональных данных</a>
-            </label>
-            <label>
-                <input type="checkbox" id="consentCheck" required> 
-                Я даю 
-                <a href="consent.html" target="_blank">Согласие на обработку персональных данных</a>
-            </label>
-            <label>
-                <input type="checkbox" id="cookieCheck" required> 
-                Я согласен на использование файлов cookie и Яндекс.Метрики
-            </label>
+        <!-- Галочки согласия -->
+        <div class="legal-checkboxes" style="margin-bottom: 20px;">
+            <label><input type="checkbox" required> Я согласен с <a href="policy.html">Политикой обработки ПД</a></label>
+            <label><input type="checkbox" required> Я даю <a href="consent.html">Согласие на обработку ПД</a></label>
+            <label><input type="checkbox" required> Я согласен на использование cookies</label>
         </div>
         <p style="font-size:12px; margin-top:10px;" id="checkboxError" style="color:red;"></p>
 
-        <!-- ВАША ЯНДЕКС ФОРМА -->
-        <script src="https://forms.yandex.ru/_static/embed.js"></script>
-        <iframe src="https://forms.yandex.ru/u/6a099e55f47e736e4e2588e7?iframe=1" frameborder="0" name="ya-form-6a099e55f47e736e4e2588e7" width="100%" height="500"></iframe>
+        !-- Яндекс Форма (уменьшенная высота) -->
+        <iframe src="https://forms.yandex.ru/u/6a099e55f47e736e4e2588e7?iframe=1" frameborder="0" width="100%" height="420"></iframe>
         
         <p style="font-size: 12px; margin-top: 20px;">Нажимая кнопку «Отправить» в форме, вы подтверждаете согласие с условиями выше.</p>
 	<div style="height: 60px;"></div>
